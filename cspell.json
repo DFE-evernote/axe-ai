@@ -1,0 +1,21 @@
+{
+  "version": "0.2",
+  "language": "en",
+  "dictionaries": ["axe-ai"],
+  "dictionaryDefinitions": [
+    {
+      "name": "axe-ai",
+      "path": "./.cspell/custom-words.txt",
+      "addWords": true
+    }
+  ],
+  "ignorePaths": [
+    "node_modules",
+    "**/node_modules",
+    "dist",
+    "pnpm-lock.yaml",
+    "package-lock.json",
+    ".git",
+    "**/*.svg"
+  ]
+}
