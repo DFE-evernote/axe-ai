@@ -1,0 +1,48 @@
+---
+title: Features
+---
+
+# Features
+
+Axe AI provides a comprehensive toolkit for building AI-powered applications with modern web technologies.
+
+## 🧩 Component Library
+
+`@axe-ai/ui` offers a set of React UI components built with Tailwind CSS v4:
+
+- **Tree-shakable exports** — Only bundle what you use via ESM/CJS dual output
+- **Tailwind CSS v4** — Leverage the latest `@source` directive for precise style generation
+- **TypeScript first** — Full type definitions shipped with every build
+- **tsup powered** — Fast builds with esbuild under the hood
+
+## 🛠 Utility Functions
+
+`@axe-ai/utils` provides shared helpers across the monorepo:
+
+- **ESM native** — Written as ES modules from the ground up
+- **Zero dependencies** — Lightweight, no external runtime deps
+- **Shared logic** — Common functions used by UI, CLI, and docs packages
+
+## ⚡ CLI Tool
+
+`@axe-ai/cli` simplifies project scaffolding and management:
+
+- **Project scaffolding** — Generate new packages with the correct structure
+- **Workspace aware** — Understands pnpm workspace conventions
+- **Automated setup** — Pre-configure tsconfig, eslint, and build tools
+
+## 📦 Monorepo Architecture
+
+The entire project is organized as a pnpm workspace monorepo:
+
+- **pnpm workspaces** — Fast, disk-efficient dependency management
+- **Shared configs** — Unified TypeScript, ESLint, and commitlint configurations
+- **Conventional commits** — Enforced via commitlint + husky hooks
+- **Spell checking** — cspell integration for documentation and code quality
+
+## 🔧 Developer Experience
+
+- **Hot reload** — Watch mode for both JS (`tsup --watch`) and CSS (`tailwindcss --watch`)
+- **Lint & format** — ESLint flat config with TypeScript support
+- **Git hooks** — Husky-powered pre-commit and commit-msg hooks
+- **Build safety** — `allowBuilds` whitelist for native binary packages

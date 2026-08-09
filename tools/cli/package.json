@@ -1,0 +1,13 @@
+{
+  "name": "@axe-ai/cli",
+  "version": "1.0.0",
+  "description": "Command-line interface tool for Axe AI project scaffolding and management",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "xingorg1",
+  "license": "ISC",
+  "type": "module"
+}

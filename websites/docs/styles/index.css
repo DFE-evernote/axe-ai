@@ -1,0 +1,12 @@
+@import "tailwindcss";
+@config "../tailwind.config.ts";
+
+:root {
+  --rp-c-brand: #7c3aed !important;
+  --rp-c-brand-light: #8b5cf6 !important;
+  --rp-c-brand-lighter: #ede9fe !important;
+  --rp-c-brand-dark: #6d28d9 !important;
+  --rp-c-brand-darker: #5b21b6 !important;
+  --rp-c-brand-tint: rgba(139, 92, 246, 0.16) !important;
+  --rp-home-hero-secondary-color: #a78bfa !important;
+}

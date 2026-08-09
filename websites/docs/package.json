@@ -1,0 +1,26 @@
+{
+  "name": "@axe-ai/docs",
+  "version": "1.0.0",
+  "description": "Axe AI documentation site built with Rspress",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "rspress dev",
+    "build": "rspress build",
+    "preview": "rspress preview"
+  },
+  "keywords": [
+    "axe-ai",
+    "documentation",
+    "rspress"
+  ],
+  "author": "xingorg1",
+  "license": "ISC",
+  "devDependencies": {
+    "@axe-ai/ui": "workspace:*",
+    "@tailwindcss/postcss": "^4.3.3",
+    "postcss": "^8.5.26",
+    "rspress": "^1.43.0",
+    "tailwindcss": "^4.3.3"
+  }
+}

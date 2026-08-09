@@ -1,0 +1,60 @@
+---
+title: ChatBubble
+---
+
+import { ChatBubble } from '@axe-ai/ui';
+
+# ChatBubble
+
+A versatile chat bubble component for rendering user and assistant messages with distinct styling.
+
+## Import
+
+```tsx
+import { ChatBubble } from '@axe-ai/ui';
+```
+
+## Props
+
+| Prop | Type | Required | Default | Description |
+|------|------|----------|---------|-------------|
+| `message` | `string` | Yes | - | The text content to display in the bubble |
+| `isUser` | `boolean` | Yes | - | Whether the message is from the user (`true`) or assistant (`false`) |
+
+## Basic Usage
+
+```tsx
+<ChatBubble message="Hello, how can I help you?" isUser={false} />
+<ChatBubble message="I need help with my project." isUser={true} />
+```
+
+## Live Preview
+
+<div style={{ display: 'flex', flexDirection: 'column', gap: '8px', padding: '16px', background: '#f9fafb', borderRadius: '8px' }}>
+  <ChatBubble message="Hello, how can I help you?" isUser={false} />
+  <ChatBubble message="I need help with my project." isUser={true} />
+</div>
+
+## Chat Interface Example
+
+```tsx
+import { ChatBubble } from '@axe-ai/ui';
+
+function ChatInterface() {
+  const messages = [
+    { id: 1, text: "Hello! How can I assist you today?", isUser: false },
+    { id: 2, text: "I need help setting up my project.", isUser: true },
+    { id: 3, text: "Sure! Let me guide you through the setup.", isUser: false },
+  ];
+
+  return (
+    <div className="chat-container">
+      {messages.map((msg) => (
+        <ChatBubble key={msg.id} message={msg.text} isUser={msg.isUser} />
+      ))}
+    </div>
+  );
+}
+```
+
+> **Note:** The ChatBubble component uses Tailwind CSS for styling. Make sure your project has Tailwind CSS configured, or the component will render without proper styles.

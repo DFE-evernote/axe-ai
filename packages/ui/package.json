@@ -1,0 +1,45 @@
+{
+  "name": "@axe-ai/ui",
+  "version": "1.0.0",
+  "description": "UI components library for Axe AI, built with React and Tailwind CSS",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "unpkg": "./dist/index.iife.js",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "default": "./dist/index.js"
+    },
+    "./styles.css": "./dist/styles.css"
+  },
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup && pnpm build:css",
+    "build:css": "tailwindcss -i src/styles.css -o dist/styles.css --minify",
+    "dev": "tsup --watch",
+    "dev:css": "tailwindcss -i src/styles.css -o dist/styles.css --watch"
+  },
+  "keywords": [],
+  "author": "xingorg1",
+  "license": "ISC",
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.4",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "tailwindcss": "^4.3.3",
+    "tsup": "^8.5.1"
+  }
+}
