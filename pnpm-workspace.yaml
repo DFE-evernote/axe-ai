@@ -5,5 +5,7 @@ packages:
 allowBuilds:
   '@parcel/watcher': true
   '@swc/core': true
+  bufferutil: set this to true or false
   core-js: true
   esbuild: true
+  utf-8-validate: set this to true or false
