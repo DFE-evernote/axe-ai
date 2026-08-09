@@ -1,7 +1,7 @@
 {
   "name": "@axe-ai/ui",
   "version": "1.0.0",
-  "description": "",
+  "description": "UI components library for Axe AI, built with React and Tailwind CSS",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
